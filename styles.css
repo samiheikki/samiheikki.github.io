@@ -112,7 +112,7 @@ section.footer p {
   line-height: 30px;
 }
 
-section.footer a:hover, section.cool-stuff a:hover {
+section.footer a:hover {
   color: #000;
 }
 
