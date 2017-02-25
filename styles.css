@@ -85,12 +85,12 @@ section.intro li a, section.cool-stuff a, section.footer a {
   color: #0C85AC;
 }
 
-section.intro li a::after, section.cool-stuff a::after {
-  content: url('img/arrow.svg');
+section.intro li a::after, section.cool-stuff a:hover::after {
+  content: url('img/open_in_new.svg');
   padding: 0 2px 0 10px;
   position: relative;
-  top: -3px;
-  right: 0;
+  top: 1px;
+  right: 6px;
   -webkit-transition: right 0.75s ease;
   transition: right 0.75s ease;
 }
