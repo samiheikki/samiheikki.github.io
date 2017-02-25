@@ -24,10 +24,10 @@ p {
 }
 
 a {
-    text-decoration: none;
-    color: #212429;
-    -webkit-transition: color 0.25s;
-    transition: color 0.25s;
+  text-decoration: none;
+  color: #212429;
+  -webkit-transition: color 0.25s;
+  transition: color 0.25s;
 }
 
 a:hover {
@@ -112,7 +112,7 @@ section.footer p {
   line-height: 30px;
 }
 
-section.footer a:hover {
+section.footer a:hover, section.cool-stuff a:hover {
   color: #000;
 }
 
