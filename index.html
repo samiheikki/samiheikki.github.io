@@ -37,6 +37,15 @@
     <meta name="theme-color" content="#0C85AC">
     <link rel="manifest" href="/manifest.json">
 
+    <script>
+      // load pre-caching service worker
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    </script>
+
   </head>
   <body>
     <div class="container">
