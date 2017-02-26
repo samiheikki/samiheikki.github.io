@@ -10,7 +10,7 @@
     "sizes": "512x512",
     "type": "image/png"
   }],
-  "start_url": "/?homescreen=1",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#0C85AC",
   "theme_color": "#0C85AC"
