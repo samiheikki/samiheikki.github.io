@@ -159,6 +159,16 @@ section.footer .face {
   border-top: 1px solid rgba(0,0,0,0.1);
 }
 
+.some-icons {
+  float: left;
+  margin: 24px 0 0 -4px;
+}
+
+.some-icons img {
+  width: 40px;
+  height: 40px;
+}
+
 @media only screen and (max-width: 500px) {
   .left-col {
     width: 100%;
@@ -175,5 +185,8 @@ section.footer .face {
   }
   .hide-mobile {
     display: none !important;
+  }
+  .some-icons {
+    margin-top: 0;
   }
 }
