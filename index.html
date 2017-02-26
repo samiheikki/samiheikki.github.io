@@ -38,12 +38,12 @@
     <link rel="manifest" href="/manifest.json">
 
     <script>
-      // load pre-caching service worker TODO Host on HTTPS
-      // if ('serviceWorker' in navigator) {
-      //   window.addEventListener('load', function () {
-      //     navigator.serviceWorker.register('/service-worker.js');
-      //   });
-      // }
+      // load pre-caching service worker
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
     </script>
 
   </head>
