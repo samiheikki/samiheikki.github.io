@@ -1,6 +1,6 @@
-# samiheikki.github.io
+# suoheikki.com
 
-> Personal website
+> [Personal website](https://suoheikki.com)
 
 ## Build Setup
 
