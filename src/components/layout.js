@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import favicon from '../images/gatsby-icon.png'
+import favicon from '../images/face32.jpg'
 
 import './layout.css'
 
