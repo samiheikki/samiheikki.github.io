@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Sami Suo-Heikki',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -16,13 +16,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'sami_suo-heikki',
+        short_name: 'suo-heikki',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#0C85AC',
+        theme_color: '#0C85AC',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/face.jpg', // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
