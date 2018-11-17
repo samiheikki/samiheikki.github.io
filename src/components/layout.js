@@ -1,47 +1,37 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from 'gatsby'
+import favicon from '../images/gatsby-icon.png'
 
-import Header from './header'
 import './layout.css'
 
+const title = 'Sami Suo-Heikki'
+const description =
+  'Sami Suo-Heikki is a Finnish software developer creating web and mobile applications.'
+
+const keywords =
+  'Sami, Suo-Heikki, wed developer finland, javascript, mobile app, software consultant, software developer'
+
 const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
-      <>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
-        >
-          {children}
-        </div>
-      </>
-    )}
-  />
+  <>
+    <Helmet
+      title={title}
+      meta={[
+        { name: 'description', content: description },
+        { name: 'keywords', content: keywords },
+        { name: 'theme-color', content: '#0C85AC' },
+        { rel: 'shortcut icon', sizes: '32x32', href: favicon },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css?family=Roboto:300,400',
+        },
+      ]}
+      author={title}
+    >
+      <html lang="en" />
+    </Helmet>
+    <div className="container">{children}</div>
+  </>
 )
 
 Layout.propTypes = {
